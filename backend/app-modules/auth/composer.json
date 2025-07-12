@@ -1,0 +1,24 @@
+{
+	"name": "estivenm0/auth",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Estivenm0\\Auth\\": "src/",
+			"Estivenm0\\Auth\\Tests\\": "tests/",
+			"Estivenm0\\Auth\\Database\\Factories\\": "database/factories/",
+			"Estivenm0\\Auth\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Estivenm0\\Auth\\Providers\\AuthServiceProvider"
+			]
+		}
+	}
+}

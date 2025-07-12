@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc726af7900d8b991338e4798473244b",
+    "content-hash": "d92af24a0971f9db8f87be8cdd8197f4",
     "packages": [
         {
             "name": "brick/math",
@@ -1250,6 +1250,70 @@
             },
             "license": [
                 "MIT"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "estivenm0/api-v1",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app-modules/api-v1",
+                "reference": "ece37e47e1d361a7075036a8a28aa10f8ce3f4d7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Estivenm0\\ApiV1\\Providers\\ApiV1ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Estivenm0\\ApiV1\\": "src/",
+                    "Estivenm0\\ApiV1\\Tests\\": "tests/",
+                    "Estivenm0\\ApiV1\\Database\\Factories\\": "database/factories/",
+                    "Estivenm0\\ApiV1\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "estivenm0/auth",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app-modules/auth",
+                "reference": "43900aa0a66fe02537e963ca04982a3bbbca97c7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Estivenm0\\Auth\\Providers\\AuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Estivenm0\\Auth\\": "src/",
+                    "Estivenm0\\Auth\\Tests\\": "tests/",
+                    "Estivenm0\\Auth\\Database\\Factories\\": "database/factories/",
+                    "Estivenm0\\Auth\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
             ],
             "transport-options": {
                 "symlink": true,

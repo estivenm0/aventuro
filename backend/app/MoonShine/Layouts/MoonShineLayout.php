@@ -39,11 +39,10 @@ final class MoonShineLayout extends AppLayout
     {
         return Footer::make()
             ->copyright(
-                fn(): string => ''
+                fn (): string => ''
             )
             ->menu($this->getFooterMenu());
     }
-
 
     protected function menu(): array
     {
