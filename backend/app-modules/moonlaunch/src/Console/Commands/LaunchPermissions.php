@@ -27,7 +27,6 @@ class LaunchPermissions extends Command
      */
     public function handle(Launch $launch, AdminModule $adminModule)
     {
-        // dd($adminModule->getResources());
         foreach ($launch->getResources() as $item) {
             $this->call('moonshine-rbac:permissions', [
                 'resourceName' => class_basename($item),

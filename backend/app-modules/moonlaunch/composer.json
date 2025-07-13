@@ -3,12 +3,7 @@
 	"description": "Starter kit for moonshine",
 	"type": "library",
 	"version": "1.0",
-	"license": "",
-	"authors": [
-		{
-		"name": "Estivenm0"
-		}
-	],
+	"license": "MIT",
 	"require": {},
 	"autoload": {
 		"psr-4": {

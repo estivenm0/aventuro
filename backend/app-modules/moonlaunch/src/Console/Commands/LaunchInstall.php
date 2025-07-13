@@ -29,7 +29,9 @@ class LaunchInstall extends Command
         $this->call('key:generate');
 
         $this->info('📦 Running migrations...');
-        $this->call('migrate');
+        $this->call('migrate', [
+            '--seed' => true
+        ]);
 
         $this->info('🔐 Generating permissions...');
         $this->call('launch:permissions');
